@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cdh8fqvkue0pu"]
 
-[ext_resource type="Script" uid="uid://btbf54djxa67c" path="res://addons/ui_widget/scripts/widget/ui_int_widget.gd" id="1_tn4f5"]
+[ext_resource type="Script" uid="uid://bear6sa3l0gwj" path="res://scripts/widget/ui_int_widget.gd" id="1_tn4f5"]
 
 [node name="UIIntWidget" type="VBoxContainer" groups=["UIWidget"]]
 script = ExtResource("1_tn4f5")

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d2m243dqm5hrx"]
 
-[ext_resource type="Script" uid="uid://dmrrtavlgfmnk" path="res://addons/ui_widget/scripts/widget/ui_colorpicker_widget.gd" id="1_cuijc"]
+[ext_resource type="Script" uid="uid://cq5ekx7xoi4dy" path="res://scripts/widget/ui_colorpicker_widget.gd" id="1_cuijc"]
 
 [node name="UIColorPickerWidget" type="VBoxContainer" groups=["UIWidget"]]
 script = ExtResource("1_cuijc")

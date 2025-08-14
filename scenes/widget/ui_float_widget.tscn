@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cehiuwckahxky"]
 
-[ext_resource type="Script" uid="uid://8mxnst37um16" path="res://addons/ui_widget/scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
+[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
 
 [node name="UIFloatWidget" type="VBoxContainer" groups=["UIWidget"]]
 script = ExtResource("1_wlvq1")

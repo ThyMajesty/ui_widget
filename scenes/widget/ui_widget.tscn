@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bt8oj6s0dtxcy"]
 
-[ext_resource type="Script" uid="uid://b5is6sfttfoeo" path="res://addons/ui_widget/scripts/widget/ui_widget.gd" id="1_f334b"]
+[ext_resource type="Script" uid="uid://kw3jyra7pk8u" path="res://scripts/widget/ui_widget.gd" id="1_f334b"]
 
 [node name="UIWidget" type="BoxContainer" groups=["UIWidget"]]
 offset_top = 41.0

@@ -1,0 +1,52 @@
+[gd_scene load_steps=9 format=3 uid="uid://cp1gl1fu3xdi4"]
+
+[ext_resource type="Script" uid="uid://bw3e8jyonpeqx" path="res://test.gd" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://uje8qbdv1e5w" path="res://scenes/widget/ui_bool_widget.tscn" id="2_ehkex"]
+[ext_resource type="PackedScene" uid="uid://d2m243dqm5hrx" path="res://scenes/widget/ui_colorpicker_widget.tscn" id="3_xersf"]
+[ext_resource type="PackedScene" uid="uid://cehiuwckahxky" path="res://scenes/widget/ui_float_widget.tscn" id="4_00tp4"]
+[ext_resource type="PackedScene" uid="uid://cdh8fqvkue0pu" path="res://scenes/widget/ui_int_widget.tscn" id="5_77dp3"]
+[ext_resource type="PackedScene" uid="uid://cnuou2s3p380h" path="res://scenes/widget/ui_list_widget.tscn" id="6_5tkv4"]
+[ext_resource type="PackedScene" uid="uid://dcmu7xjsmd433" path="res://scenes/widget/ui_vector2_widget.tscn" id="7_0m0f1"]
+[ext_resource type="PackedScene" uid="uid://bt8oj6s0dtxcy" path="res://scenes/widget/ui_widget.tscn" id="8_b0q6j"]
+
+[node name="Test" type="Node"]
+script = ExtResource("1_37kl0")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UIBoolWidget" parent="Control/VBoxContainer" instance=ExtResource("2_ehkex")]
+layout_mode = 2
+script = null
+
+[node name="UIColorPickerWidget" parent="Control/VBoxContainer" instance=ExtResource("3_xersf")]
+layout_mode = 2
+script = null
+
+[node name="UIFloatWidget" parent="Control/VBoxContainer" instance=ExtResource("4_00tp4")]
+layout_mode = 2
+script = null
+
+[node name="UIIntWidget" parent="Control/VBoxContainer" instance=ExtResource("5_77dp3")]
+layout_mode = 2
+script = null
+
+[node name="UIListWidget" parent="Control/VBoxContainer" instance=ExtResource("6_5tkv4")]
+layout_mode = 2
+script = null
+
+[node name="UIVector2Widget" parent="Control/VBoxContainer" instance=ExtResource("7_0m0f1")]
+layout_mode = 2
+script = null
+
+[node name="UIWidget" parent="Control/VBoxContainer" instance=ExtResource("8_b0q6j")]
+layout_mode = 2
+script = null

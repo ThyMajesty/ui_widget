@@ -2,6 +2,8 @@
 class_name UIWidget
 extends Control
 
+signal value_changed(new_value)
+
 @export var property_name: String:
 	get:
 		if !property_name:
@@ -9,6 +11,8 @@ extends Control
 		return property_name
 @export var debounce: bool = true
 @export var debounce_time: float = 0.1
+
+var debounce_timer: SceneTreeTimer
 
 # Displayed name
 @export var view_name: String:
@@ -27,9 +31,6 @@ func _set_value(new_value) -> void:
 # Overridable
 func _get_value():
 	return value
-
-var debounce_timer: SceneTreeTimer
-signal value_changed(new_value)
 
 # Handles acctual _set_value with debounce
 func _emit_value_changed(new_value):
