@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn4hi2vllttfw"]
+
+[ext_resource type="Script" uid="uid://raeuggx4j472" path="res://addons/ui_widget/scripts/Widget/UIColorPickerWidget.gd" id="1_l4smp"]
+
+[node name="UIColorPickerWidget" type="VBoxContainer" groups=["UIWidget"]]
+script = ExtResource("1_l4smp")
+property_name = "UIColorPickerWidget"
+debounce = false
+view_name = "Ui Color Picker Widget"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Ui Color Picker Widget"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="HBoxContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2

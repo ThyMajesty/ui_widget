@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7pw81tp6g4wu"]
+
+[ext_resource type="Script" uid="uid://c3ddkc5mkr2be" path="res://addons/ui_widget/scripts/Widget/UIBoolWidget.gd" id="1_wmh3h"]
+
+[node name="UIBoolWidget" type="VBoxContainer" groups=["UIWidget"]]
+script = ExtResource("1_wmh3h")
+property_name = "UIBoolWidget"
+view_name = "Ui Bool Widget"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
+text = "Ui Bool Widget"
