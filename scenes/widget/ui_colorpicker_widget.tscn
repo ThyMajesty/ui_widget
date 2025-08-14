@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://cn4hi2vllttfw"]
+[gd_scene load_steps=2 format=3 uid="uid://d2m243dqm5hrx"]
 
-[ext_resource type="Script" uid="uid://raeuggx4j472" path="res://addons/ui_widget/scripts/Widget/UIColorPickerWidget.gd" id="1_l4smp"]
+[ext_resource type="Script" uid="uid://dmrrtavlgfmnk" path="res://addons/ui_widget/scripts/widget/ui_colorpicker_widget.gd" id="1_cuijc"]
 
 [node name="UIColorPickerWidget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_l4smp")
+script = ExtResource("1_cuijc")
 property_name = "UIColorPickerWidget"
 debounce = false
 view_name = "Ui Color Picker Widget"

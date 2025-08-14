@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnugujfnnu153"]
+[gd_scene load_steps=2 format=3 uid="uid://dcmu7xjsmd433"]
 
-[ext_resource type="Script" uid="uid://dvsjbfusrto66" path="res://addons/ui_widget/scripts/Widget/UIVector2Widget.gd" id="1_d5d73"]
+[ext_resource type="Script" uid="uid://m0gptwb4micn" path="res://addons/ui_widget/scripts/widget/ui_vector2_widget.gd" id="1_o4h1y"]
 
 [node name="UIVector2Widget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_d5d73")
+script = ExtResource("1_o4h1y")
 property_name = "UIVector2Widget"
 view_name = "Ui Vector 2 Widget"
 

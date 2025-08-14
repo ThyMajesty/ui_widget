@@ -1,11 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://j4qbvse6u3tq"]
+[gd_scene load_steps=2 format=3 uid="uid://cehiuwckahxky"]
 
-[ext_resource type="Script" uid="uid://cp5v4qadjj73l" path="res://addons/ui_widget/scripts/Widget/UIIntWidget.gd" id="1_x42ll"]
+[ext_resource type="Script" uid="uid://8mxnst37um16" path="res://addons/ui_widget/scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
 
-[node name="UIIntWidget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_x42ll")
-property_name = "UIIntWidget"
-view_name = "Ui Int Widget"
+[node name="UIFloatWidget" type="VBoxContainer" groups=["UIWidget"]]
+script = ExtResource("1_wlvq1")
+property_name = "UIFloatWidget"
+view_name = "Ui Float Widget"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -14,7 +14,7 @@ theme_override_constants/separation = 10
 [node name="Label" type="Label" parent="HBoxContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
-text = "Ui Int Widget"
+text = "Ui Float Widget"
 
 [node name="HSlider" type="HSlider" parent="HBoxContainer"]
 custom_minimum_size = Vector2(300, 0)

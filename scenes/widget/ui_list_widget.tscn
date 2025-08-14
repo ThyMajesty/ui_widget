@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://u11o1jx8r5up"]
+[gd_scene load_steps=2 format=3 uid="uid://cnuou2s3p380h"]
 
-[ext_resource type="Script" uid="uid://cjub5aq5u5ix1" path="res://addons/ui_widget/scripts/Widget/UIListWidget.gd" id="1_od8n8"]
+[ext_resource type="Script" uid="uid://btt261al6tt11" path="res://addons/ui_widget/scripts/widget/ui_list_widget.gd" id="1_2mjcf"]
 
 [node name="UIListWidget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_od8n8")
+script = ExtResource("1_2mjcf")
 property_name = "UIListWidget"
 view_name = "Ui List Widget"
 
@@ -12,6 +12,7 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="HBoxContainer"]
 layout_mode = 2
+text = "Ui List Widget"
 
 [node name="OptionButton" type="OptionButton" parent="HBoxContainer"]
 layout_mode = 2

@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://ogj8e6iirxud"]
-
-[ext_resource type="Script" uid="uid://bopgaasy6mci4" path="res://addons/ui_widget/scripts/Widget/UIWidget.gd" id="1_an7ci"]
-
-[node name="UIWidget" type="BoxContainer" groups=["UIWidget"]]
-offset_top = 41.0
-offset_right = 1152.0
-offset_bottom = 41.0
-script = ExtResource("1_an7ci")

@@ -17,5 +17,3 @@ func _ready() -> void:
 	check_button = get_node("HBoxContainer/CheckButton")
 	check_button.text = view_name
 	check_button.toggled.connect(_set_value)
-
-

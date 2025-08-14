@@ -7,7 +7,6 @@ extends Control
 		if !property_name:
 			property_name = get_name()
 		return property_name
-@export var property_type: int
 @export var debounce: bool = true
 @export var debounce_time: float = 0.1
 

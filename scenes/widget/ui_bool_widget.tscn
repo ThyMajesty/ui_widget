@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7pw81tp6g4wu"]
+[gd_scene load_steps=2 format=3 uid="uid://uje8qbdv1e5w"]
 
-[ext_resource type="Script" uid="uid://c3ddkc5mkr2be" path="res://addons/ui_widget/scripts/Widget/UIBoolWidget.gd" id="1_wmh3h"]
+[ext_resource type="Script" uid="uid://cqoto8uoq5lno" path="res://addons/ui_widget/scripts/widget/ui_bool_widget.gd" id="1_xwo3i"]
 
 [node name="UIBoolWidget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_wmh3h")
+script = ExtResource("1_xwo3i")
 property_name = "UIBoolWidget"
 view_name = "Ui Bool Widget"
 
