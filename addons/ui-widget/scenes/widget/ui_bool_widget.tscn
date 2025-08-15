@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://uje8qbdv1e5w"]
+
+[node name="UIBoolWidget" type="VBoxContainer" groups=["UIWidget"]]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
+text = "Ui Bool Widget"

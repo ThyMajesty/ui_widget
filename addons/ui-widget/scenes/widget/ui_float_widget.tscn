@@ -1,11 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://cehiuwckahxky"]
 
-[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
+[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://addons/ui-widget/scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
 
 [node name="UIFloatWidget" type="VBoxContainer" groups=["UIWidget"]]
-script = ExtResource("1_wlvq1")
-property_name = "UIFloatWidget"
-view_name = "Ui Float Widget"
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2

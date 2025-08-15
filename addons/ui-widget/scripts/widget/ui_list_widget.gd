@@ -8,10 +8,10 @@ var label: Label
 func _get_value():
 	return int(value)
 
-func _set_value(new_value):
+func _set_value(new_value, emit = true):
 	if value == new_value: return
 	value = int(new_value)
-	_emit_value_changed(value)
+	super._set_value(new_value, emit)
 
 func set_items(items):
 	for i in items.size():
@@ -19,10 +19,15 @@ func set_items(items):
 	option_button.select(_get_value())
 
 func _ready() -> void:
-	label = get_node("HBoxContainer/Label")
-	option_button = get_node("HBoxContainer/OptionButton")
+	scene = preload("../../scenes/widget/ui_list_widget.tscn")
+	label = get_node("UIListWidget/HBoxContainer/Label")
+	option_button = get_node("UIListWidget/HBoxContainer/OptionButton")
 	label.text = view_name
 	option_button.item_selected.connect(_set_value)
+	super._ready()
+
+func _on_property_name_changed(v) -> void:
+	label.text = v
 	
 
 	
