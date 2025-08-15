@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d2m243dqm5hrx"]
 
-[node name="UIColorPickerWidget" type="VBoxContainer" groups=["UIWidget"]]
+[node name="UIColorPickerWidget" type="VBoxContainer"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2

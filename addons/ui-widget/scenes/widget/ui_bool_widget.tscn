@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://uje8qbdv1e5w"]
 
-[node name="UIBoolWidget" type="VBoxContainer" groups=["UIWidget"]]
+[node name="UIBoolWidget" type="VBoxContainer"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2

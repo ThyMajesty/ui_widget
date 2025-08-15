@@ -15,8 +15,7 @@ func _get_value():
 
 func _set_value(new_value, emit = true):
 	if value == new_value: return
-	value = float(new_value)
-	super._set_value(new_value, emit)
+	super._set_value(float(new_value), emit)
 	h_slider.value = _get_value()
 	spin_box.value = _get_value()
 

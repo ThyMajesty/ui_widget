@@ -9,8 +9,7 @@ func _get_value():
 
 func _set_value(new_value, emit = true):
 	if value == new_value: return
-	value = bool(new_value)
-	super._set_value(new_value, emit)
+	super._set_value(bool(new_value), emit)
 	check_button.button_pressed = _get_value()
 
 func _ready() -> void:

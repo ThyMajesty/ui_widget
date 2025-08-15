@@ -16,8 +16,7 @@ func _get_value():
 
 func _set_value(new_value, emit = true):
 	if value == new_value: return
-	value = new_value as Vector2
-	super._set_value(new_value, emit)
+	super._set_value(new_value as Vector2, emit)
 	spin_box_x.value = _get_value().x
 	spin_box_y.value = _get_value().y
 

@@ -10,8 +10,7 @@ func _get_value():
 
 func _set_value(new_value, emit = true):
 	if value == new_value: return
-	value = int(new_value)
-	super._set_value(new_value, emit)
+	super._set_value(int(new_value), emit)
 
 func set_items(items):
 	for i in items.size():

@@ -10,8 +10,7 @@ func _get_value():
 
 func _set_value(new_value, emit = true):
 	if value == new_value: return
-	value = Color(new_value)
-	super._set_value(new_value, emit)
+	super._set_value(Color(new_value), emit)
 	color_picker_button.color = _get_value()
 
 func _ready() -> void:

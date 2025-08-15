@@ -1,8 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://cehiuwckahxky"]
+[gd_scene format=3 uid="uid://cehiuwckahxky"]
 
-[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://addons/ui-widget/scripts/widget/ui_float_widget.gd" id="1_wlvq1"]
-
-[node name="UIFloatWidget" type="VBoxContainer" groups=["UIWidget"]]
+[node name="UIFloatWidget" type="VBoxContainer"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2

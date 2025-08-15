@@ -38,17 +38,18 @@ func _on_view_name_changed(v) -> void:
 	pass
 
 # Overridable - used to set type and modify value
-func _set_value(new_value, emit) -> void:
-	if emit: _emit_value_changed(value)
+func _set_value(new_value, emit = true) -> void:
+	if value == new_value: return
+	value = new_value
+	if emit: _emit_value_changed()
 
 # Overridable
 func _get_value():
 	return value
 
 # Handles actual _set_value with debounce
-func _emit_value_changed(new_value):
-	if value == new_value: return
-	value = new_value
+func _emit_value_changed():
+	print("_emit_value_changed")
 	if !debounce: 
 		value_changed.emit(value)
 	if debounce_timer:
@@ -60,9 +61,10 @@ func _emit_value_changed(new_value):
 # view_name and property_name are taken from the Node name or changed via editor.
 # super._ready called after child's _ready to ensure everything's been initialized 
 func _ready() -> void:
+	add_to_group("UIWidget")
 	_on_renamed()
 	renamed.connect(_on_renamed)
 
 func _on_renamed() -> void:
-	property_name = get_name()
+	property_name = get_name().to_snake_case()
 	view_name = get_name().replace("_", " ").capitalize()

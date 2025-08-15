@@ -1,8 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcmu7xjsmd433"]
+[gd_scene format=3 uid="uid://dcmu7xjsmd433"]
 
-[ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="1_o4h1y"]
-
-[node name="UIVector2Widget" type="VBoxContainer" groups=["UIWidget"]]
+[node name="UIVector2Widget" type="VBoxContainer"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
