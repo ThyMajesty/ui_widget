@@ -66,4 +66,3 @@ func _ready() -> void:
 func _on_renamed() -> void:
 	property_name = get_name()
 	view_name = get_name().replace("_", " ").capitalize()
-

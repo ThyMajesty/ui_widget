@@ -20,5 +20,6 @@ func _ready() -> void:
 	check_button.toggled.connect(_set_value)
 	super._ready()
 
-func _on_property_name_changed(v) -> void:
+func _on_view_name_changed(v) -> void:
+	if !check_button: return
 	check_button.text = v

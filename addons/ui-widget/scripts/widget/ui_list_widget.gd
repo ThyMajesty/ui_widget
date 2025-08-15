@@ -26,7 +26,8 @@ func _ready() -> void:
 	option_button.item_selected.connect(_set_value)
 	super._ready()
 
-func _on_property_name_changed(v) -> void:
+func _on_view_name_changed(v) -> void:
+	if !label: return
 	label.text = v
 	
 

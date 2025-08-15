@@ -46,5 +46,6 @@ func _changed_x(x) -> void:
 func _changed_y(y) -> void:
 	_set_value(Vector2(_get_value().x, y))
 
-func _on_property_name_changed(v) -> void:
+func _on_view_name_changed(v) -> void:
+	if !label: return
 	label.text = v

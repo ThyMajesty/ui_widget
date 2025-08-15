@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cp1gl1fu3xdi4"]
+[gd_scene load_steps=8 format=3 uid="uid://cp1gl1fu3xdi4"]
 
 [ext_resource type="Script" uid="uid://bw3e8jyonpeqx" path="res://addons/ui-widget/test.gd" id="1_37kl0"]
 [ext_resource type="Script" uid="uid://csdpyuu381obj" path="res://addons/ui-widget/scripts/widget/ui_bool_widget.gd" id="2_kr6ag"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://addons/ui-widget/scripts/widget/ui_float_widget.gd" id="4_6tcv2"]
 [ext_resource type="Script" uid="uid://bear6sa3l0gwj" path="res://addons/ui-widget/scripts/widget/ui_int_widget.gd" id="5_uxfwr"]
 [ext_resource type="Script" uid="uid://e8oxyp777bur" path="res://addons/ui-widget/scripts/widget/ui_list_widget.gd" id="6_hj8vj"]
+[ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="7_6tcv2"]
 
 [node name="Test" type="Node"]
 script = ExtResource("1_37kl0")
@@ -55,3 +56,10 @@ script = ExtResource("6_hj8vj")
 property_name = "UIListWidget"
 view_name = "Ui List Widget"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
+
+[node name="UIVector2Widget" type="BoxContainer" parent="Control/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("7_6tcv2")
+property_name = "UIVector2Widget"
+view_name = "Ui Vector 2 Widget"
+metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
