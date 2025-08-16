@@ -11,24 +11,30 @@ func _ready() -> void:
 
 	# Get all the Widgets via group
 	widget_nodes = get_tree().get_nodes_in_group("UIWidget")
-	print(widget_nodes)
 	for uiw_node in widget_nodes:
-		print(uiw_node)
-		print(uiw_node is UIWidget)
 		if uiw_node is UIWidget:
-			var key = uiw_node.property_name
-			print(key)
-			widget_dict[key] = uiw_node
-			widget_dict[key].value_changed.connect(_value_changed.bind(key))
-			widget_dict[key]._set_value(test_values[key])
+			var property_name = uiw_node.property_name
+			var node_name = uiw_node.get_name()
+			var dict_key = property_name + node_name
+			print(property_name)
+			widget_dict[dict_key] = uiw_node
+			widget_dict[dict_key].value_changed.connect(test_values._value_changed.bind(property_name, true))
+			widget_dict[dict_key]._set_value(test_values[property_name])
+			test_values.value_changed.connect(func(new_value: Variant, key: String): if property_name == key: widget_dict[dict_key]._set_value(new_value, true))
 
-func _value_changed(value, key: String) -> void:
-	print("_value_changed " + key)
-	print(value)
+
 
 class TestValues:
+	signal value_changed(new_value: Variant, key: String)
+
 	var bool_value:= true
 	var float_value:= 66.6
 	var int_value:= 66
-	var vector_value:= Vector2(0.1, 12.2)
+	var vector_2_value:= Vector2(0.1, 12.2)
 	var color_value:= Color(0.2, 0.5, 0.2, 0.7)
+
+	func _value_changed(value, key: String, emit = true) -> void:
+		if self[key] == value: return
+		self[key] = value
+		print("_value_changed " + str(key) + " " + str(value) + " | emit: " + str(emit))
+		if emit: value_changed.emit(value, key)

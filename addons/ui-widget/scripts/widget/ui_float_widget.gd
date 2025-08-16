@@ -8,7 +8,7 @@ var label: Label
 
 @export var min_value: float = 0
 @export var max_value: float = 100
-@export var step: float = 1
+@export var step: float = 0.1
 
 func _get_value():
 	return float(value)

@@ -6,8 +6,14 @@ signal value_changed(new_value)
 
 var scene:
 	set(v):
+		if scene == v: return
+		if is_instance_valid(scene_instance):
+			scene_instance.queue_free()
 		scene = v
-		add_child(scene.instantiate())
+		scene_instance = scene.instantiate()
+		add_child(scene_instance)
+
+var scene_instance
 
 # Property name - used internally 
 @export var property_name: String:
@@ -49,7 +55,6 @@ func _get_value():
 
 # Handles actual _set_value with debounce
 func _emit_value_changed():
-	print("_emit_value_changed")
 	if !debounce: 
 		value_changed.emit(value)
 	if debounce_timer:
@@ -66,5 +71,6 @@ func _ready() -> void:
 	renamed.connect(_on_renamed)
 
 func _on_renamed() -> void:
+	if !Engine.is_editor_hint(): return
 	property_name = get_name().to_snake_case()
 	view_name = get_name().replace("_", " ").capitalize()

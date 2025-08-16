@@ -5,6 +5,9 @@
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
 
-[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+[node name="Label" type="Label" parent="HBoxContainer"]
 layout_mode = 2
 text = "Ui Bool Widget"
+
+[node name="CheckButton" type="CheckButton" parent="HBoxContainer"]
+layout_mode = 2
