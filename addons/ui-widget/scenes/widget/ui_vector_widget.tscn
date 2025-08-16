@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b66hnrdwksck0"]
+
+[node name="UIVectorWidget" type="VBoxContainer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+text = "Ui Vector Widget"
+
+[node name="SpinBoxx" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SpinBoxy" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SpinBoxz" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="SpinBoxw" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2

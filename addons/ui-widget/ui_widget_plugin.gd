@@ -32,10 +32,25 @@ var components = [ {
 	THE_SCRIPT = preload("scripts/widget/ui_list_widget.gd"),
 	THE_ICON = preload("assets/icons/ui_list_widget.svg"),
 }, {
-	NODE_NAME = "UIVector2Widget",
+	NODE_NAME = "UIVectorWidget",
 	INHERITANCE = "UIWidget",
+	THE_SCRIPT = preload("scripts/widget/ui_vector_widget.gd"),
+	THE_ICON = preload("assets/icons/ui_vector_widget.svg"),
+}, {
+	NODE_NAME = "UIVector2Widget",
+	INHERITANCE = "UIVectorWidget",
 	THE_SCRIPT = preload("scripts/widget/ui_vector2_widget.gd"),
 	THE_ICON = preload("assets/icons/ui_vector2_widget.svg"),
+}, {
+	NODE_NAME = "UIVector3Widget",
+	INHERITANCE = "UIVectorWidget",
+	THE_SCRIPT = preload("scripts/widget/ui_vector3_widget.gd"),
+	THE_ICON = preload("assets/icons/ui_vector3_widget.svg"),
+}, {
+	NODE_NAME = "UIVector4Widget",
+	INHERITANCE = "UIVectorWidget",
+	THE_SCRIPT = preload("scripts/widget/ui_vector4_widget.gd"),
+	THE_ICON = preload("assets/icons/ui_vector4_widget.svg"),
 }]
 
 func _enter_tree() -> void:
