@@ -11,10 +11,14 @@ func _get_value():
 func _set_value(new_value, emit = true):
 	if value == new_value: return
 	super._set_value(int(new_value), emit)
+	if option_button && option_button.has_selectable_items(): option_button.select(value)
 
 func set_items(items):
 	for i in items.size():
-		option_button.add_icon_item(items[i].texture, items[i].name, i)
+		if items[i].has("texture"): 
+			option_button.add_icon_item(items[i].texture, items[i].name, i)
+		else:
+			option_button.add_item(items[i].name, i)
 	option_button.select(_get_value())
 
 func _ready() -> void:

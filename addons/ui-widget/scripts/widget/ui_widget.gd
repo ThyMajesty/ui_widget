@@ -67,7 +67,8 @@ func _emit_value_changed():
 # super._ready called after child's _ready to ensure everything's been initialized 
 func _ready() -> void:
 	add_to_group("UIWidget")
-	_on_renamed()
+	if property_name.is_empty(): property_name = get_name().to_snake_case()
+	if view_name.is_empty(): view_name = get_name().replace("_", " ").capitalize()
 	renamed.connect(_on_renamed)
 
 func _on_renamed() -> void:

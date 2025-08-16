@@ -6,9 +6,17 @@ var widget_dict: Dictionary
 
 var test_values := TestValues.new()
 
+@export var texture_array: Array[Texture2D]:
+	set = set_textures
+
+func set_textures(v) -> void:
+	texture_array = v
+	for i in min(texture_array.size(), test_values.textured_list_items.size()):
+		test_values.textured_list_items[i].texture = texture_array[i]
+
 func _ready() -> void:
 	print("test _ready")
-
+	set_textures(texture_array)
 	# Get all the Widgets via group
 	widget_nodes = get_tree().get_nodes_in_group("UIWidget")
 	for uiw_node in widget_nodes:
@@ -21,7 +29,8 @@ func _ready() -> void:
 			widget_dict[dict_key].value_changed.connect(test_values._value_changed.bind(property_name, true))
 			widget_dict[dict_key]._set_value(test_values[property_name])
 			test_values.value_changed.connect(func(new_value: Variant, key: String): if property_name == key: widget_dict[dict_key]._set_value(new_value, true))
-
+			if property_name == "list_value": widget_dict[dict_key].set_items(test_values.list_items)
+			if property_name == "textured_list_value": widget_dict[dict_key].set_items(test_values.textured_list_items)
 
 class TestValues:
 	signal value_changed(new_value: Variant, key: String)
@@ -31,6 +40,27 @@ class TestValues:
 	var int_value := 66
 	var vector_2_value := Vector2(0.1, 12.2)
 	var color_value := Color(0.2, 0.5, 0.2, 0.7)
+	var list_value := 1
+	var textured_list_value := 1
+
+	var list_items = [{
+		name = "Laugh"
+	}, {
+		name = "Live"
+	}, {
+		name = "Love"
+	},]
+
+	var textured_list_items = [{
+		texture = null,
+		name = "Laugh"
+	}, {
+		texture = null,
+		name = "Live"
+	}, {
+		texture = null,
+		name = "Love"
+	},]
 
 	func _value_changed(value, key: String, emit = true) -> void:
 		if self[key] == value: return
