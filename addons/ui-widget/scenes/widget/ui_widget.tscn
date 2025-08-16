@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://bt8oj6s0dtxcy"]
-
-[node name="UIWidget" type="BoxContainer"]
-offset_top = 41.0
-offset_right = 1152.0
-offset_bottom = 41.0
