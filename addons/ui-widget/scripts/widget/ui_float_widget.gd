@@ -1,5 +1,5 @@
 @tool
-class_name UIFloatWidget 
+class_name UIFloatWidget
 extends UIWidget
 
 var h_slider: HSlider

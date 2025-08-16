@@ -4,7 +4,7 @@ extends Node
 var widget_nodes: Array
 var widget_dict: Dictionary
 
-var test_values:= TestValues.new()
+var test_values := TestValues.new()
 
 func _ready() -> void:
 	print("test _ready")
@@ -23,15 +23,14 @@ func _ready() -> void:
 			test_values.value_changed.connect(func(new_value: Variant, key: String): if property_name == key: widget_dict[dict_key]._set_value(new_value, true))
 
 
-
 class TestValues:
 	signal value_changed(new_value: Variant, key: String)
 
-	var bool_value:= true
-	var float_value:= 66.6
-	var int_value:= 66
-	var vector_2_value:= Vector2(0.1, 12.2)
-	var color_value:= Color(0.2, 0.5, 0.2, 0.7)
+	var bool_value := true
+	var float_value := 66.6
+	var int_value := 66
+	var vector_2_value := Vector2(0.1, 12.2)
+	var color_value := Color(0.2, 0.5, 0.2, 0.7)
 
 	func _value_changed(value, key: String, emit = true) -> void:
 		if self[key] == value: return

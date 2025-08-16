@@ -28,6 +28,3 @@ func _ready() -> void:
 func _on_view_name_changed(v) -> void:
 	if !label: return
 	label.text = v
-	
-
-	

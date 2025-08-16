@@ -55,7 +55,7 @@ func _get_value():
 
 # Handles actual _set_value with debounce
 func _emit_value_changed():
-	if !debounce: 
+	if !debounce:
 		value_changed.emit(value)
 	if debounce_timer:
 		debounce_timer.timeout.disconnect(value_changed.emit)

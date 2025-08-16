@@ -1,7 +1,7 @@
 @tool
 extends EditorPlugin
 
-var components = [{
+var components = [ {
 	NODE_NAME = "UIWidget",
 	INHERITANCE = "BoxContainer",
 	THE_SCRIPT = preload("scripts/widget/ui_widget.gd"),
