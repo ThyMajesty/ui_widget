@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://cehiuwckahxky"]
+[gd_scene format=3 uid="uid://bcp22sji5o65g"]
 
-[node name="UIFloatWidget" type="VBoxContainer"]
+[node name="UINumberWidget" type="VBoxContainer"]
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 2
@@ -9,7 +9,7 @@ theme_override_constants/separation = 10
 [node name="Label" type="Label" parent="HBoxContainer"]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
-text = "Ui Float Widget"
+text = "Ui Number Widget"
 
 [node name="HSlider" type="HSlider" parent="HBoxContainer"]
 custom_minimum_size = Vector2(300, 0)

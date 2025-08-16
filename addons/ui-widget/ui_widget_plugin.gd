@@ -17,13 +17,18 @@ var components = [ {
 	THE_SCRIPT = preload("scripts/widget/ui_colorpicker_widget.gd"),
 	THE_ICON = preload("assets/icons/ui_colorpicker_widget.svg"),
 }, {
-	NODE_NAME = "UIFloatWidget",
+	NODE_NAME = "UINumberWidget",
 	INHERITANCE = "UIWidget",
+	THE_SCRIPT = preload("scripts/widget/ui_number_widget.gd"),
+	THE_ICON = preload("assets/icons/ui_number_widget.svg"),
+}, {
+	NODE_NAME = "UIFloatWidget",
+	INHERITANCE = "UINumberWidget",
 	THE_SCRIPT = preload("scripts/widget/ui_float_widget.gd"),
 	THE_ICON = preload("assets/icons/ui_float_widget.svg"),
 }, {
 	NODE_NAME = "UIIntWidget",
-	INHERITANCE = "UIFloatWidget",
+	INHERITANCE = "UINumberWidget",
 	THE_SCRIPT = preload("scripts/widget/ui_int_widget.gd"),
 	THE_ICON = preload("assets/icons/ui_int_widget.svg"),
 }, {

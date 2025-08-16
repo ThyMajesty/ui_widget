@@ -39,7 +39,7 @@ class TestValues:
 
 	var bool_value := true
 	var float_value := 66.6
-	var int_value := 66
+	var int_value := 55
 	var vector_2_value := Vector2(0.1, 12.2)
 	var vector_3_value := Vector3(0.1, 12.2, 24.6)
 	var vector_4_value := Vector4(0.1, 12.2, 24.6, 56.4)

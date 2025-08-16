@@ -11,11 +11,11 @@
 [ext_resource type="Script" uid="uid://e8oxyp777bur" path="res://addons/ui-widget/scripts/widget/ui_list_widget.gd" id="6_6tcv2"]
 [ext_resource type="PackedScene" uid="uid://uje8qbdv1e5w" path="res://addons/ui-widget/scenes/widget/ui_bool_widget.tscn" id="6_47vpu"]
 [ext_resource type="PackedScene" uid="uid://d2m243dqm5hrx" path="res://addons/ui-widget/scenes/widget/ui_colorpicker_widget.tscn" id="8_foqxp"]
-[ext_resource type="PackedScene" uid="uid://cehiuwckahxky" path="res://addons/ui-widget/scenes/widget/ui_float_widget.tscn" id="10_bw4re"]
 [ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="14_bw4re"]
 [ext_resource type="PackedScene" uid="uid://cnuou2s3p380h" path="res://addons/ui-widget/scenes/widget/ui_list_widget.tscn" id="15_8d3ar"]
 [ext_resource type="PackedScene" uid="uid://b66hnrdwksck0" path="res://addons/ui-widget/scenes/widget/ui_vector_widget.tscn" id="15_nyubs"]
 [ext_resource type="Script" uid="uid://08ohbbm52m72" path="res://addons/ui-widget/scripts/widget/ui_vector3_widget.gd" id="16_8d3ar"]
+[ext_resource type="PackedScene" uid="uid://bcp22sji5o65g" path="res://addons/ui-widget/scenes/widget/ui_number_widget.tscn" id="16_bw4re"]
 [ext_resource type="Script" uid="uid://c833v5ql0ri2k" path="res://addons/ui-widget/scripts/widget/ui_vector4_widget.gd" id="17_nulvl"]
 
 [node name="Test" type="Node"]
@@ -50,23 +50,6 @@ scene = ExtResource("8_foqxp")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
-
-[node name="FloatValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-script = ExtResource("4_6tcv2")
-scene = ExtResource("10_bw4re")
-property_name = "float_value"
-view_name = "Float Value"
-metadata/_custom_type_script = "uid://dcgi7klgl4ost"
-
-[node name="IntValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
-layout_mode = 2
-script = ExtResource("5_uxfwr")
-step = 1.0
-scene = ExtResource("10_bw4re")
-property_name = "int_value"
-view_name = "Int Value"
-metadata/_custom_type_script = "uid://bear6sa3l0gwj"
 
 [node name="ListValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
@@ -108,6 +91,22 @@ property_name = "vector_4_value"
 view_name = "Vector 4 Value"
 metadata/_custom_type_script = "uid://c833v5ql0ri2k"
 
+[node name="FloatValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("4_6tcv2")
+scene = ExtResource("16_bw4re")
+property_name = "float_value"
+view_name = "Float Value"
+metadata/_custom_type_script = "uid://dcgi7klgl4ost"
+
+[node name="IntValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+script = ExtResource("5_uxfwr")
+scene = ExtResource("16_bw4re")
+property_name = "int_value"
+view_name = "Int Value"
+metadata/_custom_type_script = "uid://bear6sa3l0gwj"
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer"]
 layout_mode = 2
 
@@ -126,23 +125,6 @@ scene = ExtResource("8_foqxp")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
-
-[node name="FloatValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
-layout_mode = 2
-script = ExtResource("4_6tcv2")
-scene = ExtResource("10_bw4re")
-property_name = "float_value"
-view_name = "Float Value"
-metadata/_custom_type_script = "uid://dcgi7klgl4ost"
-
-[node name="IntValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
-layout_mode = 2
-script = ExtResource("5_uxfwr")
-step = 1.0
-scene = ExtResource("10_bw4re")
-property_name = "int_value"
-view_name = "Int Value"
-metadata/_custom_type_script = "uid://bear6sa3l0gwj"
 
 [node name="ListValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
@@ -183,3 +165,19 @@ scene = ExtResource("15_nyubs")
 property_name = "vector_4_value"
 view_name = "Vector 4 Value"
 metadata/_custom_type_script = "uid://c833v5ql0ri2k"
+
+[node name="FloatValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+script = ExtResource("4_6tcv2")
+scene = ExtResource("16_bw4re")
+property_name = "float_value"
+view_name = "Float Value"
+metadata/_custom_type_script = "uid://dcgi7klgl4ost"
+
+[node name="IntValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+script = ExtResource("5_uxfwr")
+scene = ExtResource("16_bw4re")
+property_name = "int_value"
+view_name = "Int Value"
+metadata/_custom_type_script = "uid://bear6sa3l0gwj"

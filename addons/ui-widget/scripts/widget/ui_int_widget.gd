@@ -1,6 +1,6 @@
 @tool
 class_name UIIntWidget
-extends UIFloatWidget
+extends UINumberWidget
 
 func _get_value():
 	return int(value)
