@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cp1gl1fu3xdi4"]
+[gd_scene load_steps=16 format=3 uid="uid://cp1gl1fu3xdi4"]
 
 [ext_resource type="Script" uid="uid://bw3e8jyonpeqx" path="res://addons/ui-widget/test.gd" id="1_37kl0"]
 [ext_resource type="Texture2D" uid="uid://cit3be61j6dj4" path="res://addons/ui-widget/assets/icons/ui_bool_widget.svg" id="2_7ey37"]
@@ -9,7 +9,12 @@
 [ext_resource type="Texture2D" uid="uid://dxl8wg12vk66f" path="res://addons/ui-widget/assets/icons/ui_float_widget.svg" id="4_l2ppj"]
 [ext_resource type="Script" uid="uid://bear6sa3l0gwj" path="res://addons/ui-widget/scripts/widget/ui_int_widget.gd" id="5_uxfwr"]
 [ext_resource type="Script" uid="uid://e8oxyp777bur" path="res://addons/ui-widget/scripts/widget/ui_list_widget.gd" id="6_6tcv2"]
+[ext_resource type="PackedScene" uid="uid://uje8qbdv1e5w" path="res://addons/ui-widget/scenes/widget/ui_bool_widget.tscn" id="6_47vpu"]
 [ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="7_6tcv2"]
+[ext_resource type="PackedScene" uid="uid://d2m243dqm5hrx" path="res://addons/ui-widget/scenes/widget/ui_colorpicker_widget.tscn" id="8_foqxp"]
+[ext_resource type="PackedScene" uid="uid://cehiuwckahxky" path="res://addons/ui-widget/scenes/widget/ui_float_widget.tscn" id="10_bw4re"]
+[ext_resource type="PackedScene" uid="uid://dcmu7xjsmd433" path="res://addons/ui-widget/scenes/widget/ui_vector2_widget.tscn" id="13_nyubs"]
+[ext_resource type="PackedScene" uid="uid://cnuou2s3p380h" path="res://addons/ui-widget/scenes/widget/ui_list_widget.tscn" id="15_8d3ar"]
 
 [node name="Test" type="Node"]
 script = ExtResource("1_37kl0")
@@ -30,6 +35,8 @@ layout_mode = 2
 [node name="BoolValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("2_kr6ag")
+group_name = "UIWidget1"
+scene = ExtResource("6_47vpu")
 property_name = "bool_value"
 view_name = "Bool Value"
 metadata/_custom_type_script = "uid://csdpyuu381obj"
@@ -37,6 +44,7 @@ metadata/_custom_type_script = "uid://csdpyuu381obj"
 [node name="ColorValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("3_41471")
+scene = ExtResource("8_foqxp")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
@@ -44,6 +52,7 @@ metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
 [node name="FloatValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("4_6tcv2")
+scene = ExtResource("10_bw4re")
 property_name = "float_value"
 view_name = "Float Value"
 metadata/_custom_type_script = "uid://dcgi7klgl4ost"
@@ -52,6 +61,7 @@ metadata/_custom_type_script = "uid://dcgi7klgl4ost"
 layout_mode = 2
 script = ExtResource("5_uxfwr")
 step = 1.0
+scene = ExtResource("10_bw4re")
 property_name = "int_value"
 view_name = "Int Value"
 metadata/_custom_type_script = "uid://bear6sa3l0gwj"
@@ -59,6 +69,7 @@ metadata/_custom_type_script = "uid://bear6sa3l0gwj"
 [node name="Vector2Value" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("7_6tcv2")
+scene = ExtResource("13_nyubs")
 property_name = "vector_2_value"
 view_name = "Vector 2 Value"
 metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
@@ -66,6 +77,7 @@ metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
 [node name="ListValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("6_6tcv2")
+scene = ExtResource("15_8d3ar")
 property_name = "list_value"
 view_name = "List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
@@ -73,6 +85,7 @@ metadata/_custom_type_script = "uid://e8oxyp777bur"
 [node name="TexturedListValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 script = ExtResource("6_6tcv2")
+scene = ExtResource("15_8d3ar")
 property_name = "textured_list_value"
 view_name = "Textured List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
@@ -83,6 +96,7 @@ layout_mode = 2
 [node name="BoolValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("2_kr6ag")
+scene = ExtResource("6_47vpu")
 property_name = "bool_value"
 view_name = "Bool Value"
 metadata/_custom_type_script = "uid://csdpyuu381obj"
@@ -90,6 +104,7 @@ metadata/_custom_type_script = "uid://csdpyuu381obj"
 [node name="ColorValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("3_41471")
+scene = ExtResource("8_foqxp")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
@@ -97,6 +112,7 @@ metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
 [node name="FloatValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("4_6tcv2")
+scene = ExtResource("10_bw4re")
 property_name = "float_value"
 view_name = "Float Value"
 metadata/_custom_type_script = "uid://dcgi7klgl4ost"
@@ -105,6 +121,7 @@ metadata/_custom_type_script = "uid://dcgi7klgl4ost"
 layout_mode = 2
 script = ExtResource("5_uxfwr")
 step = 1.0
+scene = ExtResource("10_bw4re")
 property_name = "int_value"
 view_name = "Int Value"
 metadata/_custom_type_script = "uid://bear6sa3l0gwj"
@@ -112,6 +129,7 @@ metadata/_custom_type_script = "uid://bear6sa3l0gwj"
 [node name="Vector2Value1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("7_6tcv2")
+scene = ExtResource("13_nyubs")
 property_name = "vector_2_value"
 view_name = "Vector 2 Value"
 metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
@@ -119,6 +137,7 @@ metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
 [node name="ListValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("6_6tcv2")
+scene = ExtResource("15_8d3ar")
 property_name = "list_value"
 view_name = "List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
@@ -126,6 +145,7 @@ metadata/_custom_type_script = "uid://e8oxyp777bur"
 [node name="TexturedListValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
 script = ExtResource("6_6tcv2")
+scene = ExtResource("15_8d3ar")
 property_name = "textured_list_value"
 view_name = "Textured List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"

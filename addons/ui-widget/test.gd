@@ -19,6 +19,8 @@ func _ready() -> void:
 	set_textures(texture_array)
 	# Get all the Widgets via group
 	widget_nodes = get_tree().get_nodes_in_group("UIWidget")
+	# Custom grouping
+	widget_nodes.append_array(get_tree().get_nodes_in_group("UIWidget1"))
 	for uiw_node in widget_nodes:
 		if uiw_node is UIWidget:
 			var property_name = uiw_node.property_name

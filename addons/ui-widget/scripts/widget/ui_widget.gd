@@ -4,7 +4,14 @@ extends BoxContainer
 
 signal value_changed(new_value)
 
-var scene:
+@export var group_name = "UIWidget":
+	set(v):
+		if v.is_empty(): return
+		remove_from_group(group_name)
+		group_name = v
+		add_to_group(group_name)
+
+@export var scene: PackedScene:
 	set(v):
 		if scene == v: return
 		if is_instance_valid(scene_instance):
@@ -66,7 +73,7 @@ func _emit_value_changed():
 # view_name and property_name are taken from the Node name or changed via editor.
 # super._ready called after child's _ready to ensure everything's been initialized 
 func _ready() -> void:
-	add_to_group("UIWidget")
+	add_to_group(group_name)
 	if property_name.is_empty(): property_name = get_name().to_snake_case()
 	if view_name.is_empty(): view_name = get_name().replace("_", " ").capitalize()
 	renamed.connect(_on_renamed)
