@@ -1,4 +1,4 @@
-class_name Test
+class_name UIWidgetTest
 extends Node
 
 var widget_nodes: Array

@@ -1,26 +1,26 @@
 [gd_scene load_steps=18 format=3 uid="uid://cp1gl1fu3xdi4"]
 
-[ext_resource type="Script" uid="uid://bw3e8jyonpeqx" path="res://addons/ui-widget/test.gd" id="1_37kl0"]
-[ext_resource type="Texture2D" uid="uid://cit3be61j6dj4" path="res://addons/ui-widget/assets/icons/ui_bool_widget.svg" id="2_7ey37"]
-[ext_resource type="Script" uid="uid://csdpyuu381obj" path="res://addons/ui-widget/scripts/widget/ui_bool_widget.gd" id="2_kr6ag"]
-[ext_resource type="Script" uid="uid://cq5ekx7xoi4dy" path="res://addons/ui-widget/scripts/widget/ui_colorpicker_widget.gd" id="3_41471"]
-[ext_resource type="Texture2D" uid="uid://bda6eekses1m8" path="res://addons/ui-widget/assets/icons/ui_colorpicker_widget.svg" id="3_s75w1"]
-[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://addons/ui-widget/scripts/widget/ui_float_widget.gd" id="4_6tcv2"]
-[ext_resource type="Texture2D" uid="uid://dxl8wg12vk66f" path="res://addons/ui-widget/assets/icons/ui_float_widget.svg" id="4_l2ppj"]
-[ext_resource type="Script" uid="uid://bear6sa3l0gwj" path="res://addons/ui-widget/scripts/widget/ui_int_widget.gd" id="5_uxfwr"]
-[ext_resource type="Script" uid="uid://e8oxyp777bur" path="res://addons/ui-widget/scripts/widget/ui_list_widget.gd" id="6_6tcv2"]
-[ext_resource type="PackedScene" uid="uid://uje8qbdv1e5w" path="res://addons/ui-widget/scenes/widget/ui_bool_widget.tscn" id="6_47vpu"]
-[ext_resource type="PackedScene" uid="uid://d2m243dqm5hrx" path="res://addons/ui-widget/scenes/widget/ui_colorpicker_widget.tscn" id="8_foqxp"]
-[ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="14_bw4re"]
-[ext_resource type="PackedScene" uid="uid://cnuou2s3p380h" path="res://addons/ui-widget/scenes/widget/ui_list_widget.tscn" id="15_8d3ar"]
-[ext_resource type="PackedScene" uid="uid://b66hnrdwksck0" path="res://addons/ui-widget/scenes/widget/ui_vector_widget.tscn" id="15_nyubs"]
-[ext_resource type="Script" uid="uid://08ohbbm52m72" path="res://addons/ui-widget/scripts/widget/ui_vector3_widget.gd" id="16_8d3ar"]
-[ext_resource type="PackedScene" uid="uid://bcp22sji5o65g" path="res://addons/ui-widget/scenes/widget/ui_number_widget.tscn" id="16_bw4re"]
-[ext_resource type="Script" uid="uid://c833v5ql0ri2k" path="res://addons/ui-widget/scripts/widget/ui_vector4_widget.gd" id="17_nulvl"]
+[ext_resource type="Script" uid="uid://bw3e8jyonpeqx" path="res://addons/ui-widget/ui_widget_test.gd" id="1_qxccu"]
+[ext_resource type="Texture2D" uid="uid://cit3be61j6dj4" path="res://addons/ui-widget/assets/icons/ui_bool_widget.svg" id="2_a0g1s"]
+[ext_resource type="Texture2D" uid="uid://bda6eekses1m8" path="res://addons/ui-widget/assets/icons/ui_colorpicker_widget.svg" id="3_pgwwc"]
+[ext_resource type="Texture2D" uid="uid://dxl8wg12vk66f" path="res://addons/ui-widget/assets/icons/ui_float_widget.svg" id="4_k05vb"]
+[ext_resource type="Script" uid="uid://csdpyuu381obj" path="res://addons/ui-widget/scripts/widget/ui_bool_widget.gd" id="5_udfyg"]
+[ext_resource type="PackedScene" uid="uid://uje8qbdv1e5w" path="res://addons/ui-widget/scenes/widget/ui_bool_widget.tscn" id="6_ulwpy"]
+[ext_resource type="Script" uid="uid://cq5ekx7xoi4dy" path="res://addons/ui-widget/scripts/widget/ui_colorpicker_widget.gd" id="7_ymtk0"]
+[ext_resource type="PackedScene" uid="uid://d2m243dqm5hrx" path="res://addons/ui-widget/scenes/widget/ui_colorpicker_widget.tscn" id="8_s8gqd"]
+[ext_resource type="Script" uid="uid://e8oxyp777bur" path="res://addons/ui-widget/scripts/widget/ui_list_widget.gd" id="9_xkf3b"]
+[ext_resource type="PackedScene" uid="uid://cnuou2s3p380h" path="res://addons/ui-widget/scenes/widget/ui_list_widget.tscn" id="10_1f4at"]
+[ext_resource type="Script" uid="uid://ddnl7fjqr8ic1" path="res://addons/ui-widget/scripts/widget/ui_vector2_widget.gd" id="11_c6qcs"]
+[ext_resource type="PackedScene" uid="uid://b66hnrdwksck0" path="res://addons/ui-widget/scenes/widget/ui_vector_widget.tscn" id="12_g32mm"]
+[ext_resource type="Script" uid="uid://08ohbbm52m72" path="res://addons/ui-widget/scripts/widget/ui_vector3_widget.gd" id="13_gp07k"]
+[ext_resource type="Script" uid="uid://c833v5ql0ri2k" path="res://addons/ui-widget/scripts/widget/ui_vector4_widget.gd" id="14_2jeip"]
+[ext_resource type="Script" uid="uid://dcgi7klgl4ost" path="res://addons/ui-widget/scripts/widget/ui_float_widget.gd" id="15_cdr2j"]
+[ext_resource type="PackedScene" uid="uid://bcp22sji5o65g" path="res://addons/ui-widget/scenes/widget/ui_number_widget.tscn" id="16_s8sty"]
+[ext_resource type="Script" uid="uid://bear6sa3l0gwj" path="res://addons/ui-widget/scripts/widget/ui_int_widget.gd" id="17_vkoy2"]
 
 [node name="Test" type="Node"]
-script = ExtResource("1_37kl0")
-texture_array = Array[Texture2D]([ExtResource("2_7ey37"), ExtResource("3_s75w1"), ExtResource("4_l2ppj")])
+script = ExtResource("1_qxccu")
+texture_array = Array[Texture2D]([ExtResource("2_a0g1s"), ExtResource("3_pgwwc"), ExtResource("4_k05vb")])
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -36,73 +36,74 @@ layout_mode = 2
 
 [node name="BoolValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("2_kr6ag")
+script = ExtResource("5_udfyg")
 group_name = "UIWidget1"
-scene = ExtResource("6_47vpu")
+scene = ExtResource("6_ulwpy")
 property_name = "bool_value"
 view_name = "Bool Value"
 metadata/_custom_type_script = "uid://csdpyuu381obj"
 
 [node name="ColorValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("3_41471")
-scene = ExtResource("8_foqxp")
+script = ExtResource("7_ymtk0")
+scene = ExtResource("8_s8gqd")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
 
 [node name="ListValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("6_6tcv2")
-scene = ExtResource("15_8d3ar")
+script = ExtResource("9_xkf3b")
+scene = ExtResource("10_1f4at")
 property_name = "list_value"
 view_name = "List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
 
 [node name="TexturedListValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("6_6tcv2")
-scene = ExtResource("15_8d3ar")
+script = ExtResource("9_xkf3b")
+scene = ExtResource("10_1f4at")
 property_name = "textured_list_value"
 view_name = "Textured List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
 
 [node name="Vector2Value" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("14_bw4re")
-scene = ExtResource("15_nyubs")
+script = ExtResource("11_c6qcs")
+scene = ExtResource("12_g32mm")
 property_name = "vector_2_value"
 view_name = "Vector 2 Value"
 metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
 
 [node name="Vector3Value" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("16_8d3ar")
-scene = ExtResource("15_nyubs")
+script = ExtResource("13_gp07k")
+scene = ExtResource("12_g32mm")
 property_name = "vector_3_value"
 view_name = "Vector 3 Value"
 metadata/_custom_type_script = "uid://08ohbbm52m72"
 
 [node name="Vector4Value" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("17_nulvl")
-scene = ExtResource("15_nyubs")
+script = ExtResource("14_2jeip")
+scene = ExtResource("12_g32mm")
 property_name = "vector_4_value"
 view_name = "Vector 4 Value"
 metadata/_custom_type_script = "uid://c833v5ql0ri2k"
 
 [node name="FloatValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("4_6tcv2")
-scene = ExtResource("16_bw4re")
+script = ExtResource("15_cdr2j")
+scene = ExtResource("16_s8sty")
 property_name = "float_value"
 view_name = "Float Value"
 metadata/_custom_type_script = "uid://dcgi7klgl4ost"
 
 [node name="IntValue" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer"]
 layout_mode = 2
-script = ExtResource("5_uxfwr")
-scene = ExtResource("16_bw4re")
+script = ExtResource("17_vkoy2")
+step = 1.0
+scene = ExtResource("16_s8sty")
 property_name = "int_value"
 view_name = "Int Value"
 metadata/_custom_type_script = "uid://bear6sa3l0gwj"
@@ -112,72 +113,73 @@ layout_mode = 2
 
 [node name="BoolValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("2_kr6ag")
-scene = ExtResource("6_47vpu")
+script = ExtResource("5_udfyg")
+scene = ExtResource("6_ulwpy")
 property_name = "bool_value"
 view_name = "Bool Value"
 metadata/_custom_type_script = "uid://csdpyuu381obj"
 
 [node name="ColorValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("3_41471")
-scene = ExtResource("8_foqxp")
+script = ExtResource("7_ymtk0")
+scene = ExtResource("8_s8gqd")
 property_name = "color_value"
 view_name = "Color Value"
 metadata/_custom_type_script = "uid://cq5ekx7xoi4dy"
 
 [node name="ListValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("6_6tcv2")
-scene = ExtResource("15_8d3ar")
+script = ExtResource("9_xkf3b")
+scene = ExtResource("10_1f4at")
 property_name = "list_value"
 view_name = "List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
 
 [node name="TexturedListValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("6_6tcv2")
-scene = ExtResource("15_8d3ar")
+script = ExtResource("9_xkf3b")
+scene = ExtResource("10_1f4at")
 property_name = "textured_list_value"
 view_name = "Textured List Value"
 metadata/_custom_type_script = "uid://e8oxyp777bur"
 
 [node name="Vector2Value1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("14_bw4re")
-scene = ExtResource("15_nyubs")
+script = ExtResource("11_c6qcs")
+scene = ExtResource("12_g32mm")
 property_name = "vector_2_value"
 view_name = "Vector 2 Value"
 metadata/_custom_type_script = "uid://ddnl7fjqr8ic1"
 
 [node name="Vector3Value1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("16_8d3ar")
-scene = ExtResource("15_nyubs")
+script = ExtResource("13_gp07k")
+scene = ExtResource("12_g32mm")
 property_name = "vector_3_value"
 view_name = "Vector 3 Value"
 metadata/_custom_type_script = "uid://08ohbbm52m72"
 
 [node name="Vector4Value1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("17_nulvl")
-scene = ExtResource("15_nyubs")
+script = ExtResource("14_2jeip")
+scene = ExtResource("12_g32mm")
 property_name = "vector_4_value"
 view_name = "Vector 4 Value"
 metadata/_custom_type_script = "uid://c833v5ql0ri2k"
 
 [node name="FloatValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("4_6tcv2")
-scene = ExtResource("16_bw4re")
+script = ExtResource("15_cdr2j")
+scene = ExtResource("16_s8sty")
 property_name = "float_value"
 view_name = "Float Value"
 metadata/_custom_type_script = "uid://dcgi7klgl4ost"
 
 [node name="IntValue1" type="BoxContainer" parent="Control/HBoxContainer/VBoxContainer2"]
 layout_mode = 2
-script = ExtResource("5_uxfwr")
-scene = ExtResource("16_bw4re")
+script = ExtResource("17_vkoy2")
+step = 1.0
+scene = ExtResource("16_s8sty")
 property_name = "int_value"
 view_name = "Int Value"
 metadata/_custom_type_script = "uid://bear6sa3l0gwj"

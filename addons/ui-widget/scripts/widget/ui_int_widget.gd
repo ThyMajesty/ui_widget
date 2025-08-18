@@ -2,6 +2,10 @@
 class_name UIIntWidget
 extends UINumberWidget
 
+func _ready() -> void:
+	step = 1
+	super._ready()
+
 func _get_value():
 	return int(value)
 

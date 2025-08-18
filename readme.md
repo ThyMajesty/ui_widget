@@ -30,5 +30,5 @@ For Number and Vector nodes:
 * **Max Value** - a ```float``` maximum field value
 * **Step Value** - a ```float``` step value
 
-There is a test/showcase scene called ```test.tscn```
+There is a test/showcase scene called ```ui_widget_test.tscn```
 [![Screenshot-2025-08-18-231332.jpg](https://i.postimg.cc/50VT97gQ/Screenshot-2025-08-18-231332.jpg)](https://postimg.cc/8FZttbqT)
