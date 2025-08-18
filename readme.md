@@ -18,9 +18,9 @@ A simple Godot plugin for commonly used UI elements. It was made as a quick way 
  ```UIWidget``` will automatically populate ```view_name``` and ```property_name``` from the name of the node and will do so when Node being renamed. Can be set manually and will reset on every node rename.
 
 ### List of settings:
-* **Group Name** - can be changed to a custom one. Grop is set on init and on value change.
+* **Group Name** - can be changed to a custom one. Group is set on ```_ready``` and on value change.
 * **Scene** - you can create your own scene.
-* **Property Name** - a ```String``` that is populated automatically on init and changed on node rename from the Editor. If set from Editor value will not be changed automatilally anymore. Made for utility and identification.
+* **Property Name** - a ```String``` that is populated automatically on ```_ready``` and changed on node rename from the Editor. If set from Editor value will not be changed automatilally anymore. Made for utility and identification.
 * **View Name** - same as **Property Name** but used for setting ```label.text```.
 * **Debounce** and **Debounce Time** - used to set debounce behaviour. **Debounce** - ```bool``` turns debounce on and off. **Debounce Time** - ```float``` debounce seconds.
 
@@ -29,3 +29,6 @@ For Number and Vector nodes:
 * **Min Value** - a ```float``` minimum field value
 * **Max Value** - a ```float``` maximum field value
 * **Step Value** - a ```float``` step value
+
+There is a test/showcase scene called ```test.tscn```
+[![Screenshot-2025-08-18-231332.jpg](https://i.postimg.cc/50VT97gQ/Screenshot-2025-08-18-231332.jpg)](https://postimg.cc/8FZttbqT)
