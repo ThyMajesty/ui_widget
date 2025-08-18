@@ -10,11 +10,12 @@ config_version=5
 
 [application]
 
-config/name="ui-widget"
+config/name="ui_widget"
+config/version="0.1"
 run/main_scene="uid://cp1gl1fu3xdi4"
 config/features=PackedStringArray("4.4")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/ui-widget/plugin.cfg")
+enabled=PackedStringArray("res://addons/ui_widget/plugin.cfg")
