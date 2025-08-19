@@ -2,7 +2,7 @@
 
 A simple Godot plugin for commonly used UI elements. It was made as a quick way to create and extend settings semi automatically.
 
-### List of components and brieft explanation:
+### List of components and brief explanation:
 * ```UIWidget``` - parent made mostly for utility - extends ```BoxContainer```. Shouldn't be used by itself.
 	* ```UIBoolWidget``` - uses ```CheckButton```.
 	* ```UIColorPickerWidget``` - uses ```ColorPickerButton```.
@@ -20,9 +20,9 @@ A simple Godot plugin for commonly used UI elements. It was made as a quick way 
 ### List of settings:
 * **Group Name** - can be changed to a custom one. Group is set on ```_ready``` and on value change.
 * **Scene** - you can create your own scene.
-* **Property Name** - a ```String``` that is populated automatically on ```_ready``` and changed on node rename from the Editor. If set from Editor value will not be changed automatilally anymore. Made for utility and identification.
+* **Property Name** - a ```String``` that is populated automatically on ```_ready``` and changed on node rename from the Editor. If set from Editor value will not be changed automatically anymore. Made for utility and identification.
 * **View Name** - same as **Property Name** but used for setting ```label.text```.
-* **Debounce** and **Debounce Time** - used to set debounce behaviour. **Debounce** - ```bool``` turns debounce on and off. **Debounce Time** - ```float``` debounce seconds.
+* **Debounce** and **Debounce Time** - used to set debounce behavior. **Debounce** - ```bool``` turns debounce on and off. **Debounce Time** - ```float``` debounce seconds.
 
 #### Node specific settings:
 For Number and Vector nodes:
