@@ -32,3 +32,8 @@ For Number and Vector nodes:
 
 There is a test/showcase scene called ```ui_widget_test.tscn```
 [![Screenshot-2025-08-18-231332.jpg](https://i.postimg.cc/50VT97gQ/Screenshot-2025-08-18-231332.jpg)](https://postimg.cc/8FZttbqT)
+
+#### Note on usage outside the asset store
+
+From your project's root:
+```git subtree add --prefix=addons/ui_widget https://github.com/ThyMajesty/ui_widget.git addon --squash```
