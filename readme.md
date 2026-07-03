@@ -31,9 +31,23 @@ For Number and Vector nodes:
 * **Step Value** - a ```float``` step value
 
 There is a test/showcase scene called ```ui_widget_test.tscn```
+
 [![Screenshot-2025-08-18-231332.jpg](https://i.postimg.cc/50VT97gQ/Screenshot-2025-08-18-231332.jpg)](https://postimg.cc/8FZttbqT)
 
 #### Note on usage outside the asset store
 
 From your project's root:
+
 ```git subtree add --prefix=addons/ui_widget https://github.com/ThyMajesty/ui_widget.git addon --squash```
+
+```git subtree pull --prefix=addons/ui_widget https://github.com/ThyMajesty/ui_widget.git addon --squash```
+
+Or:
+
+```git remote add ui_widget https://github.com/ThyMajesty/ui_widget.git```
+
+```git fetch ui_widget```
+
+And update:
+
+```git subtree pull --prefix=addons/ui_widget ui_widget addon --squash```
